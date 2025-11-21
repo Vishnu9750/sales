@@ -1,7 +1,7 @@
 import pandas as pd 
 import numpy as numpy
 import joblib 
-import sremlit as st
+import sreamlit as st
 
 #load the ml model 
 
@@ -19,4 +19,5 @@ if st.button('Predict Sales'):
     input_data = np.array([[TV, Radio ,Newspaper]])
     prediction = model.predict(input_data)[0]
     st.sucess(f'Predict Sales:{prediction:.2f}')
+
     
