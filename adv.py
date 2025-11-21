@@ -1,7 +1,7 @@
 import pandas as pd 
 import numpy as numpy
 import joblib 
-import sreamlit as st
+import streamlit as st
 
 #load the ml model 
 
@@ -21,3 +21,4 @@ if st.button('Predict Sales'):
     st.sucess(f'Predict Sales:{prediction:.2f}')
 
     
+
