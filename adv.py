@@ -1,5 +1,5 @@
 import pandas as pd 
-import numpy as numpy
+import numpy as np
 import joblib 
 import streamlit as st
 
@@ -18,7 +18,8 @@ Newspaper = st.number_input("Newspaper Adv budget",min_value=0.0)
 if st.button('Predict Sales'):
     input_data = np.array([[TV, Radio ,Newspaper]])
     prediction = model.predict(input_data)[0]
-    st.sucess(f'Predict Sales:{prediction:.2f}')
+    st.success(f'Predict Sales:{prediction:.2f}')
 
     
+
 
